@@ -13,9 +13,9 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/script.js");
-});
+// app.get("/", function (req, res) {
+//     res.sendFile(__dirname + "/script.js");
+// });
 
 let port = process.env.PORT;
 if (port == null || port == "") {
