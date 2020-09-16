@@ -3,6 +3,7 @@ const nextBtn = document.querySelector("#carousel-button-next");
 const prevBtn = document.querySelector("#carousel-button-previous");
 const slideCounter = document.querySelector(".slide-counter");
 const pageBullets = document.querySelector(".page-bullets");
+const description = document.querySelector(".description");
 
 console.log(slides);
 

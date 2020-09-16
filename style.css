@@ -8,13 +8,15 @@ body {
     height: 100vh;
     display: grid;
     place-content: center;
+    background: #333;
 }
 
 img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     max-width: 600px;
     max-height: 400px;
+    border: 3px solid black;
 }
 
 .btn {
@@ -94,8 +96,9 @@ img {
 
 .description {
     font-size: 12px;
-    padding: 0.6em;
+    padding: 0.3em;
     text-align: center;
+    font-weight: 400;
     display: block;
     width: 200px;
     position: absolute;
@@ -103,6 +106,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 5%;
+    animation: fadeIn 1s ease-in;
 }
 
 .page-bullets {
@@ -152,6 +156,33 @@ img {
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        bottom: -100%;
+        opacity: 0;
+    }
+
+    25% {
+        bottom: -75%;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: -50%;
+        opacity: 0;
+    }
+
+    75% {
+        bottom: -25%;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 5%;
         opacity: 1;
     }
 }
